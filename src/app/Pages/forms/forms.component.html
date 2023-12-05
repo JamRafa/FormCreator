@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<section class="forms">
+  <a [routerLink]="['/createForm', 'NovoFormulário']">
+    <div class="card">
+      <mat-card-header>
+        <button
+          mat-fab
+          color="primary"
+          aria-label="Example icon button with a delete icon"
+        >
+          <i class="bi bi-plus"></i>
+        </button>
+      </mat-card-header>
+      <mat-card-actions>
+        <p>Novo formulário</p>
+      </mat-card-actions>
+    </div>
+  </a>
+</section>

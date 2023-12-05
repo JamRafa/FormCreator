@@ -1,0 +1,35 @@
+<app-header></app-header>
+<section class="subHeader">
+  <div class="toolsButtons">
+    <button mat-button aria-label="Adicionar">
+      <span>Adicionar</span>
+    </button>
+
+    <button mat-button aria-label="Prévia">
+      <span>Prévia</span>
+    </button>
+
+    <button mat-button aria-label="Respostas">
+      <span>Respostas</span>
+    </button>
+  </div>
+
+  <button class="sendBtn" mat-raised-button>Enviar</button>
+</section>
+
+<div class="body">
+  <section class="createFormBody">
+    <mat-card>
+      <mat-card-content>
+        <div class="search-box">
+          <input placeholder="Titulo" />
+        </div>
+        <div class="search-box">
+          <textarea placeholder="Descrição"></textarea>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <app-generic-question />
+</div>

@@ -1,0 +1,8 @@
+@import "./../../../styles/colours.scss";
+
+.header {
+  position: relative;
+  background-color: var(--cor-quinta);
+  border-bottom: solid 1px var(--cor-secundaria);
+  height: 25%;
+}

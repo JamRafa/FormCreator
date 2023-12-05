@@ -1,0 +1,91 @@
+@import "./../../../styles/colours.scss";
+@import "./../../../styles/fonts.scss";
+
+.subHeader {
+  background-color: var(--cor-hover-secundaria);
+  border-bottom: solid 1px var(--cor-secundaria);
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  justify-items: end;
+  align-items: center;
+  .toolsButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+
+    button {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      color: var(--cor-btn-secundaria);
+      font-family: $font-poppins;
+      font-weight: $font-wheit-medium;
+      background-color: transparent;
+
+      &:hover {
+        color: var(--cor-hover-primaria);
+      }
+    }
+
+
+  }
+
+  .sendBtn {
+    background-color: var(--cor-btn);
+    width: 35%;
+    min-width: 150px;
+    margin: 10px;
+    font-size: 14px;
+    color: $cor-terciaria;
+    font-family: $font-poppins;
+    font-weight: $font-wheit-medium;
+  }
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1.5% 10%;
+
+}
+.createFormBody {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card {
+  background-color: var(--cor-hover-secundaria);
+  box-shadow: none;
+
+  width: 100%;
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .search-box {
+      input {
+        width: 75%;
+      }
+
+      textArea {
+        width: 90%;
+      }
+
+      input,
+      textarea {
+        background-color: var(--cor-terciaria);
+        padding: 8px;
+        font-size: 18px;
+        font-family: $font-poppins;
+        border-radius: 5px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

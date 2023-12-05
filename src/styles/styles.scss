@@ -1,0 +1,49 @@
+@import './colours.scss';
+@import './fonts.scss';
+
+// Resetting margin, padding, and border for all elements
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Setting a consistent box-sizing
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+// Resetting fonts
+body {
+  font-family: $font-poppins, sans-serif !important;
+  line-height: 1.6;
+  color: #333;
+}
+
+// Resetting lists
+ul, ol {
+  list-style: none;
+}
+
+// Resetting links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Resetting images to display as block elements
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// Additional resets can be added as needed
+body, body.dark-mode  {
+  background-color: var(--cor-terciaria);
+  height: 100%;
+}
+
+
+
+

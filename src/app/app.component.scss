@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .content-body {
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    left: 0;
+    right: 0;
+    top: 5%;
+    bottom: 5%;
+    margin: auto;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: var(--cor-terciaria);
+    outline: solid 1px var(--cor-secundaria);
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-body{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+  }
+
+
+}
+
+body.dark-mode .content-body{
+  background-color: #444444 !important;
+}

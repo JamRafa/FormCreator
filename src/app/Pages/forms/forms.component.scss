@@ -1,0 +1,37 @@
+@import "./../../../styles/styles.scss";
+@import "./../../../styles/fonts.scss";
+
+.forms {
+  padding: 5%;
+
+  .card {
+    width: 14%;
+    min-width: 200px;
+    background-color: transparent;
+
+    mat-card-header {
+      display: flex;
+      border: dashed 2px var(--cor-secundaria);
+      justify-content: center;
+      align-items: center;
+      height: 28vh;
+      min-height: 250px;
+
+      &:hover {
+        background-color: var(--cor-hover-secundaria);
+      }
+
+      button {
+        background-color: var(--cor-btn-secundaria);
+        i {
+          font-size: 23px;
+          color: $cor-terciaria;
+        }
+      }
+    }
+
+    mat-card-actions {
+      font-weight: $font-wheit-medium;
+    }
+  }
+}

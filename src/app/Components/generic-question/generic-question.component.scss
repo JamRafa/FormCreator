@@ -1,0 +1,37 @@
+@import "./../../../styles/styles.scss";
+
+.createFormBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-hover-secundaria);
+
+  mat-card {
+    box-shadow: none;
+    padding: 2% 5%;
+    background-color: transparent;
+
+    width: 100%;
+    mat-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .search-box {
+        input {
+          background-color: var(--cor-terciaria);
+          width: 90%;
+          padding: 8px;
+          font-size: 18px;
+          font-family: $font-poppins;
+          border-radius: 5px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .tools {
+    border-top: 1px solid var(--cor-secundaria);
+  }
+}

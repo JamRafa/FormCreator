@@ -1,0 +1,56 @@
+// Modo Claro
+$cor-primaria: #5F6F52;
+$cor-secundaria: #A9B388;
+$cor-terciaria: #F6F4EB;
+$cor-quarternaria: #B99470;
+$cor-quinta: rgba(134, 156, 116, 0.5);
+$cor-texto: #F6F4EB;
+$cor-hover-primaria: rgba(134, 156, 116, 0.5);
+$cor-hover-secundaria: rgba(169, 179, 136, 0.15);
+$cor-hover-dark-secundaria: rgba(169, 179, 136, 0.3);
+$cor-btn: #5F6F52;
+$cor-btn-secundaria: #5F6F52;
+
+$cor-dark-primaria: #2e2e2e;
+$cor-dark-secundaria: #747474;
+$cor-dark-terciaria: #272829;
+$cor-dark-quarternaria: #7A6658;
+$cor-dark-texto: rgb(154, 154, 154);
+$cor-dark-hover-primaria: #4E9F3D;
+$cor-hover-dark-secundaria: #222222;
+$cor-dark-btn: #4E9F3D;
+$cor-dark-quinta: #2e2e2e;
+$cor-btn-dark-secundaria: #4c4c4b;
+
+//#2f3031
+$cor-sombra: #040D12;
+
+// Variáveis CSS para o modo claro
+body {
+  --cor-primaria: #{$cor-primaria};
+  --cor-secundaria: #{$cor-secundaria};
+  --cor-terciaria: #{$cor-terciaria};
+  --cor-quarternaria: #{$cor-quarternaria};
+  --cor-quinta: #{$cor-quinta};
+  --cor-text: #{$cor-texto};
+  --cor-hover-primaria: #{$cor-hover-primaria};
+  --cor-hover-secundaria: #{$cor-hover-secundaria};
+  --cor-btn: #{$cor-btn};
+  --cor-btn-secundaria: #{$cor-btn-secundaria};
+
+}
+
+// Variáveis CSS para o modo escuro
+body.dark-mode {
+  --cor-primaria: #{$cor-dark-primaria};
+  --cor-secundaria: #{$cor-dark-secundaria};
+  --cor-terciaria: #{$cor-dark-terciaria};
+  --cor-quarternaria: #{$cor-dark-quarternaria};
+  --cor-quinta: #{$cor-dark-quinta};
+  --cor-text: #{$cor-texto};
+  --cor-hover-primaria: #{$cor-dark-hover-primaria};
+  --cor-hover-secundaria: #{$cor-hover-dark-secundaria};
+  --cor-btn: #{$cor-dark-btn};
+  --cor-btn-secundaria: #{$cor-btn-dark-secundaria};
+
+}

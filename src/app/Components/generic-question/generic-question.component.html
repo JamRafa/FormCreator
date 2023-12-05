@@ -1,0 +1,22 @@
+<section class="createFormBody">
+  <mat-card>
+    <mat-card-content>
+      <div class="search-box">
+        <input placeholder="Pergunta..." />
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class="tools">
+    <i class="bi bi-card-image"></i>
+    <mat-form-field>
+      <mat-label>Favorite food</mat-label>
+      <mat-select [(ngModel)]="selectedValue" name="food">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{ food.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <i class="bi bi-copy"></i>
+    <i class="bi bi-trash-fill"></i>
+  </div>
+</section>
