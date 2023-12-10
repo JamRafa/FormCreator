@@ -1,0 +1,30 @@
+<mat-card class="form-card">
+  <mat-card-content [style.background-color]="randomColour">
+    <div class="container-informations">
+      <div class="profile">Mirella</div>
+      <h3>
+        Titulo do card
+      </h3>
+      <div class="stats">
+        <div>
+          <span><i class="bi bi-send-fill"></i></span>
+          <span>10</span>
+        </div>
+        <div>
+          <span><i class="bi bi-reply-fill"></i></span>
+          <span>2</span>
+        </div>
+        <div>
+          <span><i class="bi bi-hourglass"></i></span>
+          <span>8</span>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (onClick) = 'openModal()'>Partilhar</button>
+    <button mat-button>Editar</button>
+    <button mat-button>Avaliar</button>
+    <button mat-button>Exluir</button>
+  </mat-card-actions>
+</mat-card>

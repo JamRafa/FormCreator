@@ -8,12 +8,14 @@ import { SidenavService } from 'src/app/service/sidenav.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  actualPage = ''
+  actualPage = 'Formularios';
 
-  constructor(private sideNavService: SidenavService, private route: ActivatedRoute ) {
+  constructor(private sideNavService: SidenavService, private route: ActivatedRoute) {
     this.route.params.subscribe(params => {
-      this.actualPage = params['page']
-    })
+      this.actualPage = params['page'] ? params['page'] : this.actualPage;
+    });
+
+    console.log(this.actualPage);
   }
 
   toggleDrawer() {

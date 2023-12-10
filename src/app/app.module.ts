@@ -16,10 +16,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatDividerModule } from '@angular/material/divider';
-import { BackgroundComponent } from './Components/background/background.component';
 import { CreateFormComponent } from './Pages/create-form/create-form.component';
 import { GenericQuestionComponent } from './Components/generic-question/generic-question.component';
 import { MatSelectModule } from '@angular/material/select';
+import { FormCardComponent } from './Components/form-card/form-card.component';
+import { ShareModalComponent } from './Components/share-modal/share-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { MatSelectModule } from '@angular/material/select';
     NavBarComponent,
     ContainerComponent,
     FormsComponent,
-    BackgroundComponent,
     CreateFormComponent,
     GenericQuestionComponent,
+    FormCardComponent,
+    ShareModalComponent,
   ],
   imports: [
     MatSelectModule,
@@ -46,6 +49,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

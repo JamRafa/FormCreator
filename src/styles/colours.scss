@@ -1,10 +1,10 @@
 // Modo Claro
-$cor-primaria: #5F6F52;
-$cor-secundaria: #A9B388;
-$cor-terciaria: #F6F4EB;
+$cor-primaria: #387C6D;
+$cor-secundaria: #FAF3F0;
+$cor-terciaria: #D9D9D9;
 $cor-quarternaria: #B99470;
 $cor-quinta: rgba(134, 156, 116, 0.5);
-$cor-texto: #F6F4EB;
+$cor-texto: #FFE5E5;
 $cor-hover-primaria: rgba(134, 156, 116, 0.5);
 $cor-hover-secundaria: rgba(169, 179, 136, 0.15);
 $cor-hover-dark-secundaria: rgba(169, 179, 136, 0.3);
@@ -15,7 +15,7 @@ $cor-dark-primaria: #2e2e2e;
 $cor-dark-secundaria: rgba(116, 116, 116, 0.5);
 $cor-dark-terciaria: #272829;
 $cor-dark-quarternaria: #7A6658;
-$cor-dark-texto: rgb(154, 154, 154);
+$cor-dark-texto: #EEEEEE;
 $cor-dark-hover-primaria: #4E9F3D;
 $cor-hover-dark-secundaria: #222222;
 $cor-dark-btn: #4E9F3D;
@@ -47,7 +47,7 @@ body.dark-mode {
   --cor-terciaria: #{$cor-dark-terciaria};
   --cor-quarternaria: #{$cor-dark-quarternaria};
   --cor-quinta: #{$cor-dark-quinta};
-  --cor-text: #{$cor-texto};
+  --cor-text: #{$cor-dark-texto};
   --cor-hover-primaria: #{$cor-dark-hover-primaria};
   --cor-hover-secundaria: #{$cor-hover-dark-secundaria};
   --cor-btn: #{$cor-dark-btn};
