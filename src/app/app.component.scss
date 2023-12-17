@@ -1,25 +1,17 @@
 .app {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-
-}
-
-div {
   position: relative;
+  flex-direction: column;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+
+  .body-container {
+    position: relative;
+    height: 100%;
+    left: 250px;
+    width: calc(100% - 250px);
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .app {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 
-
-}
-
-body.dark-mode .content-body{
-  background-color: #444444 !important;
 }

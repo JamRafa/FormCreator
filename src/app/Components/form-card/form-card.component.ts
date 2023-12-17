@@ -16,9 +16,8 @@ export class FormCardComponent {
   }
 
   openModal(): void {
-    const dialogRef = this.dialog.open(ShareModalComponent, {
-      width: '250px',
-    });
+    console.log('aqui');
+    const dialogRef = this.dialog.open(ShareModalComponent, {});
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log('closed');

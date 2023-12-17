@@ -1,10 +1,16 @@
 <mat-card class="form-card">
-  <mat-card-content [style.background-color]="randomColour">
+  <mat-card-content style="padding: 0">
     <div class="container-informations">
-      <div class="profile">Mirella</div>
-      <h3>
-        Titulo do card
-      </h3>
+      <div class="header">
+        <div class="mainInfo">
+          <h3>Relatorio de atividades</h3>
+          <h4>Novembro de 2023</h4>
+        </div>
+        <button class="deletebtn">
+          <i class="bi bi-trash-fill "></i>
+        </button>
+      </div>
+      <img src="assets/imagens/capas.png" />
       <div class="stats">
         <div>
           <span><i class="bi bi-send-fill"></i></span>
@@ -15,16 +21,17 @@
           <span>2</span>
         </div>
         <div>
-          <span><i class="bi bi-hourglass"></i></span>
+          <span><i class="bi bi-hourglass-split"></i></span>
           <span>8</span>
         </div>
       </div>
     </div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button (onClick) = 'openModal()'>Partilhar</button>
     <button mat-button>Editar</button>
     <button mat-button>Avaliar</button>
-    <button mat-button>Exluir</button>
+    <button class="partilhar" mat-button (click)="openModal()">
+      Partilhar
+    </button>
   </mat-card-actions>
 </mat-card>

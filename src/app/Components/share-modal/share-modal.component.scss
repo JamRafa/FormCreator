@@ -1,0 +1,24 @@
+@import "./../../../styles/colours.scss";
+
+.modal-container {
+  background-color: var(--cor-terciaria);
+  width: 50vw;
+  height: 40vh;
+
+  h1,
+  div,
+  button {
+    color: black;
+  }
+
+
+}
+
+.my-custom-input .mat-input-element {
+  color: blue; // Change to your desired color
+  caret-color: red; // Change caret color if needed
+
+  &:focus {
+    border-color: green; // Change border color on focus
+  }
+}

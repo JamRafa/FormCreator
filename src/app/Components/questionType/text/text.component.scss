@@ -1,0 +1,29 @@
+@import "./../../../../styles/colours.scss";
+@import "./../../../../styles/fonts.scss";
+
+.createFormBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  padding: 3% 8%;
+
+  .question {
+    p {
+      font-family: $font-poppins;
+      font-weight: $font-wheit-medium;
+      font-size: 16px;
+    }
+  }
+
+  .answer{
+    width: 100%;
+
+    mat-form-field{
+      background-color: $cor-terciaria;
+      color: $cor-terciaria !important;
+      width: 80%;
+    }
+  }
+}

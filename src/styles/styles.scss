@@ -1,5 +1,5 @@
-@import './colours.scss';
-@import './fonts.scss';
+@import "./colours.scss";
+@import "./fonts.scss";
 
 // Resetting margin, padding, and border for all elements
 * {
@@ -9,19 +9,18 @@
 }
 
 // Setting a consistent box-sizing
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 // Resetting fonts
-body {
-  font-family: $font-poppins, sans-serif !important;
-  line-height: 1.6;
-  color: #333;
-}
+
 
 // Resetting lists
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -39,11 +38,10 @@ img {
 }
 
 // Additional resets can be added as needed
-body, body.dark-mode  {
+body,
+body.dark-mode {
   background-color: var(--cor-terciaria);
-  height: 100%;
+  height: 100vh !important;
+  line-height: 1.6;
+  font-family: $font-poppins, sans-serif !important;
 }
-
-
-
-

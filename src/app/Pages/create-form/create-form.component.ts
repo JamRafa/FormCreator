@@ -7,11 +7,5 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./create-form.component.scss'],
 })
 export class CreateFormComponent {
-  actualPage = ''
 
-  constructor(private route: ActivatedRoute){
-    this.route.params.subscribe(params => {
-      this.actualPage = params['id']
-    })
-  }
 }

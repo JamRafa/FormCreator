@@ -1,7 +1,11 @@
-<div class="app">
-  <app-nav-bar class="nav-bar"></app-nav-bar>
-  <div class="content">
-    <app-header></app-header>
+<div *ngIf="perfil" class="app">
+  <app-header></app-header>
+  <app-nav-bar></app-nav-bar>
+  <div class="body-container">
     <router-outlet></router-outlet>
   </div>
+</div>
+
+<div *ngIf="!perfil">
+  <router-outlet></router-outlet>
 </div>

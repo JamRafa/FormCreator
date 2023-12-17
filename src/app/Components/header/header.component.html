@@ -1,10 +1,27 @@
 <section class="header">
-  <div class="pageTitle">
-    <i class="bi-file-earmark-plus-fill"></i>
-    <h2>{{actualPage}}</h2>
+  <div class="begin">
+    <div class="title">
+      <i class="bi-file-earmark-plus-fill"></i>
+      <h2>Gestor de atividades</h2>
+    </div>
   </div>
-  <div class="search-box">
-    <i class="bi bi-search"></i>
-    <input placeholder="Pesquisar" />
+  <div class="meddle">
+    <button class="pageBtn">
+      <span class="mat-text">Formulários</span>
+    </button>
+    <button class="pageBtn">
+      <span class="mat-text">Responder</span>
+    </button>
+    <button class="pageBtn">
+      <span class="mat-text">Resultados</span>
+    </button>
+  </div>
+  <div class="end">
+    <div class="icons-content" (click)="toggleDarkMode()">
+      <i class="bi bi-moon-fill"></i>
+    </div>
+    <div class="icons-content">
+      <i class="bi bi-person-fill"></i>
+    </div>
   </div>
 </section>

@@ -8,8 +8,8 @@
   height: 70px;
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 5fr 3fr;
-  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center ;
   align-items: center;
 
   .toolsButtons {

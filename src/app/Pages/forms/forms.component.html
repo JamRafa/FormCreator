@@ -1,20 +1,37 @@
 <section class="forms">
-  <a [routerLink]="['/createForm', 'Novo Formulário']">
-    <div class="card">
-      <mat-card-header>
-        <button
-          mat-fab
-          color="primary"
-          aria-label="Example icon button with a delete icon"
-        >
-          <i class="bi bi-plus"></i>
-        </button>
-      </mat-card-header>
-      <mat-card-actions>
-        <p>Novo formulário</p>
-      </mat-card-actions>
+  <div class="filter">
+    <div class="title">
+      <h2>Formularios <span>criados</span></h2>
+      <h3>Pagina de visualização dos formulários</h3>
     </div>
-  </a>
+    <div class="filterTypes">
+      <div class="search-box">
+        <input matInput placeholder="Pesquisar" />
+      </div>
+      <button  mat-flat-button>
+        <i class="bi bi-filter"></i>
+      </button>
+    </div>
+  </div>
 
-  <app-form-card></app-form-card>
+  <div class="forms-container">
+
+    <a [routerLink]="['/createForm', 'Novo Formulário']">
+      <div class="card">
+        <mat-card-header>
+          <button
+            mat-fab
+            color="primary"
+            aria-label="Example icon button with a delete icon"
+          >
+            <i class="bi bi-plus"></i>
+          </button>
+        </mat-card-header>
+      </div>
+    </a>
+    <app-form-card></app-form-card>
+    <app-form-card></app-form-card>
+    <app-form-card></app-form-card>
+    <app-form-card></app-form-card>
+  </div>
 </section>

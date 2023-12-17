@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -13,4 +14,7 @@ export class ShareModalComponent {
   onNoClick(): void {
     this.dialogRef.close();
   }
+
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+
 }

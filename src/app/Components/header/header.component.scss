@@ -1,52 +1,70 @@
-@import './../../../styles/colours.scss';
+@import "./../../../styles/colours.scss";
+@import "./../../../styles/fonts.scss";
 
 .header {
+  position: fixed;
   display: grid;
-  grid-template-columns: 2fr 5fr ;
-  padding: 20px 15px;
-  color: $cor-terciaria;
-  background-color: var(--cor-primaria);
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px 15px;
+  align-items: center;
+  background-color: var(--cor-hover-primaria);
+  backdrop-filter: blur(8px);
+  border-bottom: solid 1px var(--cor-secundaria);
+  color: $cor-primaria;
+  z-index: 100;
 
-  .pageTitle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    i {
-      font-size: 22px;
-    }
-
-    h2 {
-      font-size: 30px;
-      color: $cor-terciaria;
+  .begin {
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 4%;
+      font-size: 16px;
+      grid-column-end: 1;
     }
   }
 
-  .search-box {
+  .meddle {
     display: flex;
-    align-items: center;
-    width: 50%;
-    gap: 10px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    font-size: 18px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    gap: 6%;
+    justify-self: center;
 
-    input {
-      width: 90%;
-      padding: 8px;
-      font-size: 18px;
+    .pageBtn {
+      font-weight: $font-wheit-medium;
+      padding: 10px 15px;
+      color: $cor-primaria;
+      font-family: $font-poppins, sans-serif;
+      font-size: 13px;
       background-color: transparent;
-    }
+      border-radius: 5px;
 
-    input:focus {
-      outline: none;
-      box-shadow: none;
+      &:hover {
+        background-color: var(--cor-secundaria);
+      }
+    }
+  }
+
+  .end {
+    display: flex;
+    justify-self: end;
+    gap: 10%;
+
+    .icons-content {
+      border: solid 1px var(--cor-secundaria);
+      padding: 6px 8px;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: var(--cor-secundaria);
+      }
+      i {
+        font-size: 16px;
+      }
     }
   }
 }
 
-h2{
+h2 {
   margin: 0;
+  font-family: $font-poppins;
 }

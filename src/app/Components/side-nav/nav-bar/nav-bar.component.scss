@@ -1,0 +1,26 @@
+@import "./../../../../styles/colours.scss";
+@import "./../../../../styles/fonts.scss";
+
+.side-nav {
+  position: fixed;
+  border-right: solid 1px var(--cor-secundaria);
+  height: 100%;
+  top: 71px;
+  min-width: 250px;
+  z-index: 100;
+  flex: 1;
+
+  .search-box {
+    width: 100%;
+    padding: 15px 5px 15px 10px;
+    border-radius: 0;
+    background-color: var(--cor-secundaria) !important;
+
+    input{
+      background-color: transparent;
+      outline: none;
+      font-size: 15px;
+    }
+
+  }
+}
