@@ -1,23 +1,16 @@
 <section class="date-time">
-  <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-    <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
-      <button mat-icon-button disabled></button>
-      <span>{{ node.name }}</span>
-    </mat-tree-node>
-    <mat-tree-node
-      *matTreeNodeDef="let node; when: hasChild"
-      matTreeNodePadding
-    >
-      <button
-        mat-icon-button
-        matTreeNodeToggle
-        [attr.aria-label]="'Toggle ' + node.name"
+  <mat-card-content>
+    <h2 class="example-h2">Total de formularios</h2>
+
+    <div class="spinner-container">
+      <mat-progress-spinner
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
       >
-        <mat-icon class="mat-icon-rtl-mirror">
-          {{ treeControl.isExpanded(node) ? "expand_more" : "chevron_right" }}
-        </mat-icon>
-      </button>
-      <span>{{ node.name }}</span>
-    </mat-tree-node>
-  </mat-tree>
+      </mat-progress-spinner>
+      <span class="spinner-value">{{ value }}</span>
+    </div>
+  </mat-card-content>
 </section>

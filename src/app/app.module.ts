@@ -26,8 +26,12 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { TextComponent } from './Components/questionType/text/text.component';
 import { DateTimeComponent } from './Components/side-nav/date-time/date-time.component';
 import { ContainerComponent } from './Components/container/container.component';
-import {MatTreeModule} from '@angular/material/tree';
+import { MatTreeModule } from '@angular/material/tree';
 import { FormFilterComponent } from './Components/form-filter/form-filter.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { FormFilterComponent } from './Components/form-filter/form-filter.compon
     FormFilterComponent,
   ],
   imports: [
+    MatButtonToggleModule,
+    MatProgressSpinnerModule,
+    MatSliderModule,
     MatSelectModule,
+    MatRadioModule,
     FormsModule,
     MatDividerModule,
     MatFormFieldModule,
@@ -62,7 +70,7 @@ import { FormFilterComponent } from './Components/form-filter/form-filter.compon
     MatDialogModule,
     ReactiveFormsModule,
     MatProgressBarModule,
-    MatTreeModule
+    MatTreeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

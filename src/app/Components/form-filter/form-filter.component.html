@@ -1,1 +1,20 @@
-<p>form-filter works!</p>
+<section class="form-filters">
+  <mat-form-field class="selectFild"  appearance="outline">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <ng-container *ngFor="let food of foods">
+        <mat-option [value]="food.value">{{ food.viewValue }}</mat-option>
+      </ng-container>
+    </mat-select>
+  </mat-form-field>
+  <mat-button-toggle-group
+    appearance="legacy"
+    name="fontStyle"
+    aria-label="Font Style"
+    value = "none"
+  >
+    <mat-button-toggle value="none">Sem filtro</mat-button-toggle>
+    <mat-button-toggle value="measured">Avaliados</mat-button-toggle>
+    <mat-button-toggle value="nomeasured">Não avaliados</mat-button-toggle>
+  </mat-button-toggle-group>
+</section>

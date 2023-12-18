@@ -8,11 +8,13 @@
       <div class="search-box">
         <input matInput placeholder="Pesquisar" />
       </div>
-      <button  mat-flat-button>
+      <button (click)="toggleFIlterActive()"  mat-flat-button>
         <i class="bi bi-filter"></i>
       </button>
     </div>
   </div>
+
+  <app-form-filter *ngIf="isFiltersActive"/>
 
   <div class="forms-container">
 

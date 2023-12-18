@@ -1,0 +1,26 @@
+@import './../../../styles/styles.scss';
+
+.form-filters {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  mat-form-field{
+    height: 55px;
+  }
+
+  .selectFild {
+    .mat-mdc-form-field-subscript-wrapper{
+      display: none !important;
+    }
+  }
+
+  mat-button-toggle-group{
+    box-shadow: none;
+    border: 1px solid var(--cor-secundaria);
+    color: $cor-primaria;
+  }
+}
+

@@ -1,19 +1,33 @@
-@import '../../../../styles/colours.scss';
-@import '../../../../styles/fonts.scss';
+@import "../../../../styles/colours.scss";
+@import "../../../../styles/fonts.scss";
 
-.date-time{
+.date-time {
   padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-button, span{
-  color: $cor-primaria;
-  font-size: 12px;
+span {
+  font-size: 15px;
+  font-weight: $font-wheit-bold;
 }
 
-mat-tree-node{
-  background-color: var(--cor-terciaria);
+h2 {
+  color: var(--cor-text);
+  font-size: 18px;
+}
+.spinner-container {
+  position: relative;
+  display: flex; /* ou 'flex' dependendo do seu layout */
+  justify-content: center;
+  color: var(--cor-text);
+}
 
-  &:hover{
-    background-color: var(--cor-secundaria);
-  }
+.spinner-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Estilize o texto conforme necessário */
 }
