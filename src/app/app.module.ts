@@ -32,6 +32,11 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatRadioModule } from '@angular/material/radio';
+import { MultipleAnswerComponent } from './Components/questionType/multiple-answer/multiple-answer.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FileComponent } from './Components/questionType/file/file.component';
+import { TrueorFalseComponent } from './Components/questionType/trueor-false/trueor-false.component';
+import { ScoreComponent } from './Components/questionType/score/score.component';
 
 @NgModule({
   declarations: [
@@ -48,9 +53,14 @@ import { MatRadioModule } from '@angular/material/radio';
     TextComponent,
     DateTimeComponent,
     FormFilterComponent,
+    MultipleAnswerComponent,
+    FileComponent,
+    TrueorFalseComponent,
+    ScoreComponent,
   ],
   imports: [
     MatButtonToggleModule,
+    MatCheckboxModule,
     MatProgressSpinnerModule,
     MatSliderModule,
     MatSelectModule,

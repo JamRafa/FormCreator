@@ -1,13 +1,19 @@
 <div class="page">
   <section class="header">
-    <img src="assets/imagens/capa-ciencias.png" alt="capa-ciencias" />
+
+    <div class="image-container">
+      <img src="assets/imagens/capa-ciencias.png" alt="capa-ciencias" />
+    </div>
     <div class="header-data">
       <div class="text">
-        <h1>{{questions.titulo}}</h1>
-        <p>{{questions.descricao}}</p>
+        <h1>{{ questions.titulo }}</h1>
+        <p>{{ questions.descricao }}</p>
       </div>
       <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
     </div>
   </section>
-
+  <section class="questions">
+    <app-text></app-text>
+    <app-multiple-answer></app-multiple-answer>
+  </section>
 </div>
