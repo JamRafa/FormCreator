@@ -37,6 +37,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FileComponent } from './Components/questionType/file/file.component';
 import { TrueorFalseComponent } from './Components/questionType/trueor-false/trueor-false.component';
 import { ScoreComponent } from './Components/questionType/score/score.component';
+import { QuestionComponentComponent } from './Components/questionType/question-component/question-component.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ScoreComponent } from './Components/questionType/score/score.component'
     FileComponent,
     TrueorFalseComponent,
     ScoreComponent,
+    QuestionComponentComponent,
   ],
   imports: [
     MatButtonToggleModule,

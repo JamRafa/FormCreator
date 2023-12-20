@@ -12,7 +12,7 @@ export class AnswerFormComponent {
     titulo: 'Prova de Ciências Naturais - 8º Ano',
     descricao:
       'Esta prova avalia o conhecimento dos alunos em ecossistemas e cadeias alimentares.',
-    imagemCapa: 'url_da_imagem_de_capa_ecossistemas.jpg',
+    imagemCapa: './../../../assets/imagens/capa-ciencias.png',
     perguntas: [
       {
         id: 1,
@@ -28,7 +28,7 @@ export class AnswerFormComponent {
           { id: '2a', texto: 'Certo', selecionada: false },
           { id: '2b', texto: 'Errado', selecionada: false },
         ],
-        respostaCorreta: '2b',
+        resposta: '2b',
       },
       {
         id: 3,
@@ -47,7 +47,7 @@ export class AnswerFormComponent {
           { id: '4c', texto: 'Coelho', selecionada: false },
           { id: '4d', texto: 'Alga', selecionada: false },
         ],
-        respostaCorreta: '4b',
+        resposta: '4b',
       },
     ],
   };

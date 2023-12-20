@@ -1,24 +1,8 @@
-<section class="createFormBody">
-  <div class="header">
-    <div class="questionNumber">
-      <span>2</span>
-    </div>
-  </div>
-  <div class="question">
+<section class="multipleAnswer" [formGroup]="formGroup">
+  <h4>Selecione sua opção:</h4>
+  <div *ngFor="let option of opcoes">
     <p>
-      Explique como a fotossíntese e a respiração celular estão interconectadas
-      nos ciclos de energia e matéria em um ecossistema. Inclua em sua resposta
-      os principais componentes e produtos de cada processo.
+      <mat-checkbox [formControlName]="option.id">{{ option.texto }}</mat-checkbox>
     </p>
-  </div>
-  <div class="answer">
-    <section class="multipleAnswer" [formGroup]="toppings">
-      <h4 >Select your toppings:</h4>
-      <p><mat-checkbox formControlName="pepperoni">Pepperoni</mat-checkbox></p>
-      <p>
-        <mat-checkbox formControlName="extracheese">Extra Cheese</mat-checkbox>
-      </p>
-      <p><mat-checkbox formControlName="mushroom">Mushroom</mat-checkbox></p>
-    </section>
   </div>
 </section>

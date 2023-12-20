@@ -1,26 +1,44 @@
 @import "./../../../styles/colours.scss";
 
-.page{
+.page {
   height: 100%;
   width: 100%;
   padding: 90px 25%;
 
-  .image-container{
-    height: 310x;
-    width: 100%;
-    background-color: black;
+  .header {
+    position: relative;
 
-    img{
+    .image-container {
+      height: 310x;
       width: 100%;
-      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-
-
-  .questions{
+  .questions {
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 60px;
+  }
+
+  .conclusion {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 15%;
+    }
+    .next {
+      background-color: $cor-primaria;
+    }
+    .back {
+      color: var(--cor-text);
+      border: solid 1px var(--cor-secundaria);
+    }
   }
 }

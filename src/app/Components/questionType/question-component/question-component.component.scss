@@ -44,23 +44,9 @@
     width: 100%;
     padding: 2% 8%;
     margin-bottom: 20px;
-
-    .multipleAnswer {
-      background-color: var(--cor-back-cards);
-      color: $cor-texto;
-      font-size: 15px;
-      width: 100%;
-
-    }
   }
 }
 
 .mat-mdc-form-field-subscript-wrapper {
   display: none !important;
 }
-
-h4,
-mat-checkbox{
-  color: var(--cor-text);
-}
-

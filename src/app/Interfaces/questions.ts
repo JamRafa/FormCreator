@@ -1,21 +1,20 @@
-export interface Opcao {
+export interface QuestionOption {
   id: string;
   texto: string;
   selecionada: boolean;
 }
 
-export interface Pergunta {
+interface Question {
   id: number;
   tipo: string;
   pergunta: string;
-  opcoes?: Opcao[];
-  resposta?: string;
-  respostaCorreta?: string;
+  resposta: string;
+  opcoes?: QuestionOption[];
 }
 
 export interface Questions {
   titulo: string;
   descricao: string;
   imagemCapa: string;
-  perguntas: Pergunta[];
+  perguntas: Question[];
 }

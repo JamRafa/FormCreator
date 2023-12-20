@@ -1,66 +1,9 @@
 @import "./../../../../styles/colours.scss";
 @import "./../../../../styles/fonts.scss";
 
-.createFormBody {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+mat-form-field {
+  height: 55px;
   background-color: var(--cor-back-cards);
-  border: solid 1px var(--cor-secundaria);
-  border-radius: 10px;
-  overflow: hidden;
-
-  .header {
-    width: 100%;
-    padding: 10px 15px;
-    border-bottom: solid 1px var(--cor-secundaria);
-  }
-  .questionNumber {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 17px;
-    width: 20px;
-    color: $cor-terciaria;
-    font-size: 16px;
-    border: solid 1px var(--cor-primaria);
-    background-color: $cor-primaria;
-    height: 20px;
-  }
-
-  .question {
-    padding: 2% 8%;
-
-    p {
-      font-family: $font-poppins;
-      font-weight: $font-wheit-medium;
-      font-size: 14px;
-      color: var(--cor-text);
-    }
-  }
-
-  .answer {
-    width: 100%;
-    padding: 2% 8%;
-    margin-bottom: 20px;
-
-
-    mat-form-field {
-      height: 55px;
-      background-color: var(--cor-back-cards);
-      font-size: 15px;
-      width: 100%;
-
-
-      input {
-        color: var(--cor-text);
-        border: none;
-      }
-    }
-  }
-}
-
-.mat-mdc-form-field-subscript-wrapper {
-  display: none !important;
+  font-size: 15px;
+  width: 100%;
 }

@@ -1,0 +1,23 @@
+<section class="createFormBody">
+  <div class="header">
+    <div class="questionNumber">
+      <span>{{ questionData.id }}</span>
+    </div>
+  </div>
+  <div class="question">
+    <p>{{ questionData.pergunta }}</p>
+  </div>
+  <div class="answer" [ngSwitch]="questionData.tipo">
+    <app-multiple-answer
+      *ngSwitchCase="'multiplaEscolha'"
+      [question]="questionData.pergunta"
+      [opcoes]="questionData.opcoes">
+    </app-multiple-answer>
+    <app-text
+      *ngSwitchCase="'texto'"
+      [question]="questionData.pergunta">
+    </app-text>
+
+    <div *ngSwitchDefault>Unsupported question type</div>
+  </div>
+</section>
